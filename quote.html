@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Get a free quote | Sunrise Transit Limited</title>
+  <meta name="description" content="Tell us about your move in about two minutes and get a free, no-obligation quote. Add photos of your items for the most accurate price.">
+  <link rel="canonical" href="https://www.sunrisetransit.co.uk/quote.html">
+  <meta name="color-scheme" content="only light">
+  <meta name="theme-color" content="#f7f9fc">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sunrise Transit Limited">
+  <meta property="og:title" content="Get a free quote | Sunrise Transit Limited">
+  <meta property="og:description" content="Tell us about your move in about two minutes and get a free, no-obligation quote. Add photos of your items for the most accurate price.">
+  <meta property="og:url" content="https://www.sunrisetransit.co.uk/quote.html">
+  <meta property="og:image" content="https://www.sunrisetransit.co.uk/assets/img/og-image.jpg">
+  <link rel="icon" href="assets/img/brand/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/outfit.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/motion.css">
+  <!-- Plain scripts that share one namespace (window.Sunrise), so the site also works
+       when a page is opened straight from the folder. -->
+  <script defer src="js/config.js"></script>
+  <script defer src="js/smooth-scroll.js"></script>
+  <script defer src="js/ui.js"></script>
+  <script defer src="js/forms.js"></script>
+  <script defer src="js/quote-form.js"></script>
+  <script defer src="js/protect.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page page-quote">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="index.html" aria-label="Sunrise Transit Limited, home">
+      <img src="assets/img/brand/logo.webp" width="1532" height="200" alt="Sunrise Transit Limited">
+    </a>
+
+    <nav aria-label="Main">
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="menu-extra"><a class="btn btn-primary" href="quote.html">Get a free quote</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:+440000000000">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2Z"></path></svg>
+        <span>+44 (0)000 000 0000</span><span class="pill-247">24/7</span>
+      </a>
+      <a class="btn btn-primary" href="quote.html" aria-current="page">Get a free quote</a>
+      <button class="nav-burger" id="nav-burger" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero page-hero-tight" aria-labelledby="page-h">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Get a quote</span></nav>
+      <h1 id="page-h">Get your free quote</h1>
+      <p class="lead">Tell us a little about your move and we'll come back with a competitive quote. The more you tell us, the more accurately we can price it.</p>
+      <p class="hero-meta">Takes about 2 minutes · Fields marked <span class="req">*</span> are required</p>
+    </section>
+
+    <div class="page-body quote-layout">
+      <form class="qform" id="qform" novalidate enctype="multipart/form-data">
+        <ol class="qsteps" id="qsteps" aria-label="Form steps">
+          <li class="is-on"><span>1</span>Your details</li>
+          <li><span>2</span>Addresses</li>
+          <li><span>3</span>Date and items</li>
+          <li><span>4</span>Extras and photos</li>
+        </ol>
+
+        <!-- ===== STEP 1 ===== -->
+        <div class="qpanel is-on" data-step="1">
+          <fieldset>
+            <legend>Your details</legend>
+            <div class="grid-2">
+              <div class="form-col">
+                <label for="q-name">Full name <span class="req">*</span></label>
+                <input class="field" id="q-name" name="name" autocomplete="name" required>
+              </div>
+              <div class="form-col">
+                <label for="q-phone">Contact number <span class="req">*</span></label>
+                <input class="field" id="q-phone" name="phone" type="tel" autocomplete="tel" required>
+              </div>
+              <div class="form-col span-2">
+                <label for="q-email">Email address <span class="req">*</span></label>
+                <input class="field" id="q-email" name="email" type="email" autocomplete="email" required>
+              </div>
+            </div>
+            <div class="form-col is-spaced">
+              <span class="label" id="contact-label">How should we get back to you?</span>
+              <span class="seg" role="radiogroup" aria-labelledby="contact-label">
+                <label><input type="radio" name="contact_method" value="Phone" checked><span>Phone</span></label>
+                <label><input type="radio" name="contact_method" value="Email"><span>Email</span></label>
+                <label><input type="radio" name="contact_method" value="Text / WhatsApp"><span>Text / WhatsApp</span></label>
+              </span>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Service required</legend>
+            <div class="form-col">
+              <label for="q-service">What do you need? <span class="req">*</span></label>
+              <select class="field" id="q-service" name="service" required>
+                <option value="">Please choose a service</option>
+                <option value="house">House removal</option>
+                <option value="flat">Flat or apartment removal</option>
+                <option value="office">Office removal</option>
+                <option value="furniture">Furniture removal</option>
+                <option value="manvan">Man and van</option>
+                <option value="packing">Packing and moving</option>
+                <option value="courier">Courier or delivery</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <div class="qnav">
+            <button class="btn btn-primary" type="button" data-next>Continue <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+
+        <!-- ===== STEP 2 ===== -->
+        <div class="qpanel" data-step="2" hidden>
+          <fieldset>
+            <legend>Collection</legend>
+            <div class="grid-2">
+              <div class="form-col span-2">
+                <label for="q-from-addr">Collection address <span class="req">*</span></label>
+                <input class="field" id="q-from-addr" name="from_address" autocomplete="street-address" required>
+              </div>
+              <div class="form-col">
+                <label for="q-from-pc">Postcode <span class="req">*</span></label>
+                <input class="field pc" id="q-from-pc" name="from_postcode" autocomplete="postal-code" required>
+              </div>
+              <div class="form-col">
+                <label for="q-from-type">Property type</label>
+                <select class="field" id="q-from-type" name="from_property">
+                  <option>House</option><option>Flat / apartment</option><option>Bungalow</option>
+                  <option>Office / commercial</option><option>Storage unit</option><option>Other</option>
+                </select>
+              </div>
+              <div class="form-col">
+                <label for="q-from-floor">Floor</label>
+                <select class="field" id="q-from-floor" name="from_floor">
+                  <option>Ground</option><option>1st</option><option>2nd</option><option>3rd</option><option>4th</option><option>5th or higher</option>
+                </select>
+              </div>
+              <div class="form-col">
+                <label for="q-from-lift">Lift available?</label>
+                <select class="field" id="q-from-lift" name="from_lift"><option>No</option><option>Yes</option></select>
+              </div>
+              <div class="form-col span-2">
+                <label for="q-from-park">Parking and loading access</label>
+                <select class="field" id="q-from-park" name="from_parking">
+                  <option>Driveway / private parking</option><option>On-street parking</option>
+                  <option>Permit / restricted parking</option><option>Loading bay</option><option>Not sure</option>
+                </select>
+              </div>
+              <div class="form-col span-2">
+                <label for="q-from-access">Stairs or access restrictions</label>
+                <textarea class="field area" id="q-from-access" name="from_access" rows="2" placeholder="Narrow stairs, a long walk from the van, timed access…"></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Delivery</legend>
+            <div class="grid-2">
+              <div class="form-col span-2">
+                <label for="q-to-addr">Destination address <span class="req">*</span></label>
+                <input class="field" id="q-to-addr" name="to_address" autocomplete="off" required>
+              </div>
+              <div class="form-col">
+                <label for="q-to-pc">Postcode <span class="req">*</span></label>
+                <input class="field pc" id="q-to-pc" name="to_postcode" autocomplete="off" required>
+              </div>
+              <div class="form-col">
+                <label for="q-to-type">Property type</label>
+                <select class="field" id="q-to-type" name="to_property">
+                  <option>House</option><option>Flat / apartment</option><option>Bungalow</option>
+                  <option>Office / commercial</option><option>Storage unit</option><option>Other</option>
+                </select>
+              </div>
+              <div class="form-col">
+                <label for="q-to-floor">Floor</label>
+                <select class="field" id="q-to-floor" name="to_floor">
+                  <option>Ground</option><option>1st</option><option>2nd</option><option>3rd</option><option>4th</option><option>5th or higher</option>
+                </select>
+              </div>
+              <div class="form-col">
+                <label for="q-to-lift">Lift available?</label>
+                <select class="field" id="q-to-lift" name="to_lift"><option>No</option><option>Yes</option></select>
+              </div>
+              <div class="form-col span-2">
+                <label for="q-to-park">Parking and loading access</label>
+                <select class="field" id="q-to-park" name="to_parking">
+                  <option>Driveway / private parking</option><option>On-street parking</option>
+                  <option>Permit / restricted parking</option><option>Loading bay</option><option>Not sure</option>
+                </select>
+              </div>
+              <div class="form-col span-2">
+                <label for="q-to-access">Special access instructions</label>
+                <textarea class="field area" id="q-to-access" name="to_access" rows="2"></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="qnav">
+            <button class="btn btn-ghost" type="button" data-prev><span aria-hidden="true">←</span> Back</button>
+            <button class="btn btn-primary" type="button" data-next>Continue <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+
+        <!-- ===== STEP 3 ===== -->
+        <div class="qpanel" data-step="3" hidden>
+          <fieldset>
+            <legend>Moving date and time</legend>
+            <div class="grid-2">
+              <div class="form-col">
+                <label for="q-date">Preferred date <span class="req">*</span></label>
+                <input class="field" id="q-date" name="date" type="date" required>
+              </div>
+              <div class="form-col">
+                <label for="q-time">Preferred collection time</label>
+                <select class="field" id="q-time" name="time">
+                  <option>Any time</option>
+                  <option>Early morning (6am to 9am)</option>
+                  <option>Morning (9am to 12pm)</option>
+                  <option>Afternoon (12pm to 5pm)</option>
+                  <option>Evening (5pm to 9pm)</option>
+                  <option>Night (9pm onwards)</option>
+                </select>
+              </div>
+              <div class="form-col">
+                <label for="q-flex">Is the date flexible?</label>
+                <select class="field" id="q-flex" name="flexible">
+                  <option>Yes</option><option>No</option><option>Slightly (a few days either way)</option>
+                </select>
+              </div>
+              <div class="form-col">
+                <label for="q-date2">Alternative date (if you have one)</label>
+                <input class="field" id="q-date2" name="alt_date" type="date">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Items to be moved</legend>
+            <div class="form-col">
+              <label for="q-items">The main items</label>
+              <textarea class="field area" id="q-items" name="items" rows="4"
+                        placeholder="For example: sofas, beds, wardrobes, tables, chairs, mattresses, TVs, appliances, desks, boxes and other furniture."></textarea>
+            </div>
+            <div class="form-col is-spaced">
+              <label for="q-boxes">Approximate number of boxes or bags</label>
+              <select class="field" id="q-boxes" name="boxes">
+                <option value="none">None</option><option value="1-10">1 to 10</option>
+                <option value="11-25">11 to 25</option><option value="26-50">26 to 50</option>
+                <option value="51-100">51 to 100</option><option value="100+">More than 100</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Large or special items</legend>
+            <div class="check-grid">
+              <label class="check"><input type="checkbox" name="special" value="Piano"> Piano</label>
+              <label class="check"><input type="checkbox" name="special" value="Large wardrobe"> Large wardrobe</label>
+              <label class="check"><input type="checkbox" name="special" value="Fragile furniture"> Fragile furniture</label>
+              <label class="check"><input type="checkbox" name="special" value="Artwork"> Artwork</label>
+              <label class="check"><input type="checkbox" name="special" value="Glass items"> Glass items</label>
+              <label class="check"><input type="checkbox" name="special" value="Antiques"> Antiques</label>
+              <label class="check"><input type="checkbox" name="special" value="Unusually heavy items"> Unusually heavy items</label>
+            </div>
+            <div class="form-col is-spaced">
+              <label for="q-special">Anything that needs special handling?</label>
+              <textarea class="field area" id="q-special" name="special_notes" rows="2"></textarea>
+            </div>
+          </fieldset>
+
+          <div class="qnav">
+            <button class="btn btn-ghost" type="button" data-prev><span aria-hidden="true">←</span> Back</button>
+            <button class="btn btn-primary" type="button" data-next>Continue <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+
+        <!-- ===== STEP 4 ===== -->
+        <div class="qpanel" data-step="4" hidden>
+          <fieldset>
+            <legend>Additional services</legend>
+            <div class="check-grid">
+              <label class="check"><input type="checkbox" name="extras" value="Packing assistance"> Packing assistance</label>
+              <label class="check"><input type="checkbox" name="extras" value="Dismantling and reassembly"> Dismantling and reassembly of furniture</label>
+              <label class="check"><input type="checkbox" name="extras" value="Loading and unloading assistance"> Loading and unloading assistance</label>
+              <label class="check"><input type="checkbox" name="extras" value="Packing materials"> Packing materials</label>
+            </div>
+            <div class="form-col is-spaced">
+              <label for="q-other">Other requirements</label>
+              <textarea class="field area" id="q-other" name="other_requirements" rows="2"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Photos</legend>
+            <p class="hint">Photos of the items help us estimate the vehicle size, the people and the time the job needs. JPG or PNG, up to 10 images.</p>
+            <label class="drop" for="q-photos">
+              <input id="q-photos" name="photos" type="file" accept="image/jpeg,image/png" multiple>
+              <span class="drop-in"><b>Add photos</b> or drop them here</span>
+            </label>
+            <div class="previews" id="previews" aria-live="polite"></div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Anything else?</legend>
+            <div class="form-col">
+              <label for="q-notes">Additional information</label>
+              <textarea class="field area" id="q-notes" name="notes" rows="3"></textarea>
+            </div>
+            <label class="check is-spaced consent">
+              <input type="checkbox" name="consent" value="yes" required>
+              <span>I agree that my details will be used to respond to my enquiry and arrange my requested service, as described in the <a href="privacy.html">privacy policy</a>. <span class="req">*</span></span>
+            </label>
+            <label class="hp" aria-hidden="true">Company<input name="company" tabindex="-1" autocomplete="off"></label>
+          </fieldset>
+
+          <div class="qnav">
+            <button class="btn btn-ghost" type="button" data-prev><span aria-hidden="true">←</span> Back</button>
+            <button class="btn btn-primary" type="submit">Request my free quote</button>
+          </div>
+        </div>
+
+        <div class="qdone" id="qdone" hidden tabindex="-1">
+          <h2>Thank you</h2>
+          <p class="qdone-text"></p>
+          <a class="btn btn-ghost" href="index.html">Back to the home page</a>
+        </div>
+      </form>
+
+      <aside class="quote-aside">
+        <div class="aside-card">
+          <h3>Prefer to talk?</h3>
+          <p>Call us any time, day or night.</p>
+          <a class="aside-big" href="tel:+440000000000">+44 (0)000 000 0000</a>
+        </div>
+        <div class="aside-card">
+          <h3>Photos on your phone?</h3>
+          <p>Send them by WhatsApp with a short message about the move.</p>
+          <a class="btn btn-sun" href="https://wa.me/440000000000" rel="noopener">Message us on WhatsApp</a>
+        </div>
+        <div class="aside-card aside-quiet">
+          <h3>Your privacy</h3>
+          <p>We use your details only to answer this enquiry and arrange your service. See our <a href="privacy.html">privacy policy</a>.</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand-foot" href="index.html" aria-label="Sunrise Transit Limited, home">
+            <img src="assets/img/brand/logo-stacked.webp" width="599" height="282" alt="Sunrise Transit Limited" loading="lazy">
+          </a>
+          <p class="footer-tag">Removals, man and van and courier services across the UK.</p>
+          <div class="footer-contact">
+            <a href="tel:+440000000000">+44 (0)000 000 0000</a>
+            <a href="mailto:info@sunrisetransit.co.uk">info@sunrisetransit.co.uk</a>
+            <a href="https://wa.me/440000000000" rel="noopener">Text or WhatsApp</a>
+            <span>Open 24 hours, 7 days a week</span>
+          </div>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li><a href="services.html#house">House removals</a></li>
+            <li><a href="services.html#flat">Flat and apartment removals</a></li>
+            <li><a href="services.html#office">Office and business removals</a></li>
+            <li><a href="services.html#courier">Courier and delivery</a></li>
+            <li><a href="services.html#man-and-van">Man and van</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="quote.html">Get a free quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Information</h3>
+          <ul>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="sitemap.xml">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; <span data-year>2026</span> Sunrise Transit Limited. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <div class="mobile-bar" id="mobile-bar">
+    <a class="btn btn-sun" href="tel:+440000000000"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2Z"></path></svg> Call 24/7</a>
+  </div>
+</body>
+</html>

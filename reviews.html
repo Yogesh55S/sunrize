@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Customer reviews | Sunrise Transit Limited</title>
+  <meta name="description" content="Moved with Sunrise Transit Limited? Share your experience and help other customers choose their moving service with confidence.">
+  <link rel="canonical" href="https://www.sunrisetransit.co.uk/reviews.html">
+  <meta name="color-scheme" content="only light">
+  <meta name="theme-color" content="#f7f9fc">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sunrise Transit Limited">
+  <meta property="og:title" content="Customer reviews | Sunrise Transit Limited">
+  <meta property="og:description" content="Moved with Sunrise Transit Limited? Share your experience and help other customers choose their moving service with confidence.">
+  <meta property="og:url" content="https://www.sunrisetransit.co.uk/reviews.html">
+  <meta property="og:image" content="https://www.sunrisetransit.co.uk/assets/img/og-image.jpg">
+  <link rel="icon" href="assets/img/brand/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/outfit.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/motion.css">
+  <!-- Plain scripts that share one namespace (window.Sunrise), so the site also works
+       when a page is opened straight from the folder. -->
+  <script defer src="js/config.js"></script>
+  <script defer src="js/smooth-scroll.js"></script>
+  <script defer src="js/ui.js"></script>
+  <script defer src="js/forms.js"></script>
+  <script defer src="js/reviews-data.js"></script>
+  <script defer src="js/reviews.js"></script>
+  <script defer src="js/protect.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="index.html" aria-label="Sunrise Transit Limited, home">
+      <img src="assets/img/brand/logo.webp" width="1532" height="200" alt="Sunrise Transit Limited">
+    </a>
+
+    <nav aria-label="Main">
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="reviews.html" aria-current="page">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="menu-extra"><a class="btn btn-primary" href="quote.html">Get a free quote</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:+440000000000">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2Z"></path></svg>
+        <span>+44 (0)000 000 0000</span><span class="pill-247">24/7</span>
+      </a>
+      <a class="btn btn-primary" href="quote.html">Get a free quote</a>
+      <button class="nav-burger" id="nav-burger" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero has-art" aria-labelledby="page-h">
+      <div class="ph-copy">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Reviews</span></nav>
+        <h1 id="page-h">Customer reviews</h1>
+        <p class="lead">Used our service? Tell us how it went. Honest feedback helps other customers choose with confidence, and helps us get better.</p>
+      </div>
+      <div class="ph-art ph-art-reviews" aria-hidden="true">
+        <img class="pa-cut pa-lamp" src="assets/img/float-lamp.webp" width="640" height="1257" alt="">
+        <img class="pa-main" src="assets/img/service-2.webp" width="1000" height="952" alt="" fetchpriority="high">
+        <span class="pa-bubble pb-ask">How did we do?<b>☆☆☆☆☆</b></span>
+      </div>
+    </section>
+
+    <div class="page-body">
+      <!-- ========== SUMMARY ==========
+           Figures are worked out from js/reviews-data.js, which holds only real,
+           checked reviews. Empty to begin with, so the page says so. -->
+      <section class="rv-summary reveal" aria-labelledby="sum-h">
+        <h2 id="sum-h" class="sr-only">Rating summary</h2>
+        <div class="rv-score">
+          <span class="rv-big" id="rv-avg" hidden></span>
+          <span class="rv-stars" id="rv-avg-stars" aria-hidden="true"><span class="rv-stars-fill" style="width:0%">★★★★★</span>★★★★★</span>
+          <span class="rv-count" id="rv-count">No reviews yet</span>
+        </div>
+        <ul class="rv-bars" id="rv-bars" aria-label="Reviews by star rating"></ul>
+        <a class="btn btn-primary rv-write" href="#write">Write a review</a>
+      </section>
+
+      <!-- ========== LIST ========== -->
+      <section class="rv-browse" aria-labelledby="list-h">
+        <h2 id="list-h" class="sr-only">Published reviews</h2>
+        <div class="rv-toolbar">
+          <div class="rv-chips" role="group" aria-label="Filter by rating">
+            <button type="button" class="rv-chip" data-rating="all" aria-pressed="true">All</button>
+            <button type="button" class="rv-chip" data-rating="5" aria-pressed="false">5 ★</button>
+            <button type="button" class="rv-chip" data-rating="4" aria-pressed="false">4 ★</button>
+            <button type="button" class="rv-chip" data-rating="3" aria-pressed="false">3 ★</button>
+            <button type="button" class="rv-chip" data-rating="low" aria-pressed="false">1–2 ★</button>
+          </div>
+          <div class="rv-selects">
+            <label class="sr-only" for="rv-service">Service</label>
+            <select class="field" id="rv-service">
+              <option value="all">All services</option>
+              <option>House removal</option>
+              <option>Flat or apartment removal</option>
+              <option>Office or business removal</option>
+              <option>Courier or delivery</option>
+              <option>Man and van</option>
+              <option>Other</option>
+            </select>
+            <label class="sr-only" for="rv-sort">Sort reviews</label>
+            <select class="field" id="rv-sort">
+              <option value="new">Newest first</option>
+              <option value="high">Highest rated</option>
+              <option value="low">Lowest rated</option>
+            </select>
+          </div>
+        </div>
+        <p class="rv-showing" id="rv-showing" aria-live="polite"></p>
+        <div class="rv-list" id="rv-list"></div>
+        <div class="empty-state rv-empty" id="rv-empty">
+          <span class="empty-stars" aria-hidden="true">★★★★★</span>
+          <h3 id="rv-empty-h">No reviews here yet</h3>
+          <p id="rv-empty-p">If we've moved you, yours could be the first.</p>
+          <a class="btn btn-primary" id="rv-empty-btn" href="#write">Write a review</a>
+        </div>
+      </section>
+
+      <!-- ========== WRITE A REVIEW ========== -->
+      <section class="write" id="write" aria-labelledby="write-h">
+        <div class="write-side">
+          <span class="chip">Write a review</span>
+          <h2 id="write-h">Share your experience</h2>
+          <ul class="write-notes">
+            <li>Takes less than 2 minutes</li>
+            <li>Only your first name is shown</li>
+          </ul>
+          <div class="how-card">
+            <h3>How reviews appear here</h3>
+            <ol>
+              <li>You send your review with this form.</li>
+              <li>We check it comes from a real job.</li>
+              <li>It's added to this page with your first name, town and service.</li>
+            </ol>
+          </div>
+        </div>
+
+        <form class="rform" id="rform" novalidate>
+          <fieldset class="stars-field">
+            <legend>Your overall rating <span class="req">*</span></legend>
+            <div class="stars" id="stars">
+              <input type="radio" id="s5" name="rating" value="5" required><label for="s5" title="5 stars">★<span class="sr-only">5 stars</span></label>
+              <input type="radio" id="s4" name="rating" value="4"><label for="s4" title="4 stars">★<span class="sr-only">4 stars</span></label>
+              <input type="radio" id="s3" name="rating" value="3"><label for="s3" title="3 stars">★<span class="sr-only">3 stars</span></label>
+              <input type="radio" id="s2" name="rating" value="2"><label for="s2" title="2 stars">★<span class="sr-only">2 stars</span></label>
+              <input type="radio" id="s1" name="rating" value="1"><label for="s1" title="1 star">★<span class="sr-only">1 star</span></label>
+            </div>
+          </fieldset>
+
+          <div class="grid-2">
+            <div class="form-col">
+              <label for="r-name">Your first name <span class="req">*</span></label>
+              <input class="field" id="r-name" name="name" autocomplete="given-name" required>
+            </div>
+            <div class="form-col">
+              <label for="r-service">Service used <span class="req">*</span></label>
+              <select class="field" id="r-service" name="service" required>
+                <option value="">Please choose</option>
+                <option>House removal</option>
+                <option>Flat or apartment removal</option>
+                <option>Office or business removal</option>
+                <option>Courier or delivery</option>
+                <option>Man and van</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-col">
+              <label for="r-town">Town or city</label>
+              <input class="field" id="r-town" name="town" autocomplete="address-level2">
+            </div>
+            <div class="form-col">
+              <label for="r-date">Date of your move</label>
+              <input class="field" id="r-date" name="date" type="date">
+            </div>
+            <div class="form-col span-2">
+              <label for="r-title">Review title <span class="req">*</span></label>
+              <input class="field" id="r-title" name="title" maxlength="80" required>
+            </div>
+            <div class="form-col span-2">
+              <label for="r-text">Your review <span class="req">*</span></label>
+              <textarea class="field area" id="r-text" name="review" rows="5" maxlength="1500" required></textarea>
+            </div>
+          </div>
+
+          <label class="check is-spaced consent">
+            <input type="checkbox" name="consent" value="yes" required>
+            <span>I confirm this review is based on my own experience, and I agree to it being published. <span class="req">*</span></span>
+          </label>
+          <label class="hp" aria-hidden="true">Company<input name="company" tabindex="-1" autocomplete="off"></label>
+
+          <div class="qnav">
+            <button class="btn btn-primary" type="submit">Submit my review</button>
+          </div>
+          <p class="form-status" id="rstatus" role="status" tabindex="-1"></p>
+        </form>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand-foot" href="index.html" aria-label="Sunrise Transit Limited, home">
+            <img src="assets/img/brand/logo-stacked.webp" width="599" height="282" alt="Sunrise Transit Limited" loading="lazy">
+          </a>
+          <p class="footer-tag">Removals, man and van and courier services across the UK.</p>
+          <div class="footer-contact">
+            <a href="tel:+440000000000">+44 (0)000 000 0000</a>
+            <a href="mailto:info@sunrisetransit.co.uk">info@sunrisetransit.co.uk</a>
+            <a href="https://wa.me/440000000000" rel="noopener">Text or WhatsApp</a>
+            <span>Open 24 hours, 7 days a week</span>
+          </div>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li><a href="services.html#house">House removals</a></li>
+            <li><a href="services.html#flat">Flat and apartment removals</a></li>
+            <li><a href="services.html#office">Office and business removals</a></li>
+            <li><a href="services.html#courier">Courier and delivery</a></li>
+            <li><a href="services.html#man-and-van">Man and van</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="quote.html">Get a free quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Information</h3>
+          <ul>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="sitemap.xml">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; <span data-year>2026</span> Sunrise Transit Limited. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <div class="mobile-bar" id="mobile-bar">
+    <a class="btn btn-sun" href="tel:+440000000000"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2Z"></path></svg> Call 24/7</a>
+    <a class="btn btn-primary" href="quote.html">Free quote</a>
+  </div>
+</body>
+</html>

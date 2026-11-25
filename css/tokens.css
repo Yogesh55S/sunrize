@@ -1,0 +1,62 @@
+/* tokens.css — every colour, font, size and timing in one place.
+   Sunrise Transit brand: navy #00396e and gold #e8a412 from the logo, on light surfaces only.
+   Palette is light-only by design. Contrast pairs are noted against the surface they sit on. */
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../assets/fonts/outfit.woff2") format("woff2");
+  font-weight: 600 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/inter.woff2") format("woff2");
+  font-weight: 400 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: only light;
+
+  /* surfaces */
+  --page: #f7f9fc;          /* page */
+  --paper: #ffffff;         /* panels, cards */
+  --sky: #e4f0fb;           /* story stage and image backdrops */
+  --sun: #fff3d6;           /* warm gold tint */
+  --mint: #e3f4ec;          /* section tint */
+  --peach: #fde9dd;         /* section tint */
+
+  /* ink */
+  --ink: #0e2340;           /* navy-black text: 15.6:1 on page */
+  --ink2: #4a5670;          /* 7.0:1 on page, 6.3:1 on peach */
+  --blue: #00396e;          /* Sunrise navy (from the logo); white text on it: 11.6:1 */
+  --blue-ink: #00396e;      /* links and accents: 11.0:1 on page */
+  --sunny: #e8a412;         /* Sunrise gold (from the logo); navy text on it: 5.4:1 */
+  --gold-ink: #8a5d00;      /* gold for small text on light surfaces: 5.2:1 on the warm tint */
+  --leaf: #1b6e4f;          /* icons and small details only */
+
+  /* lines and glass */
+  --line: rgba(14, 35, 64, .12);
+  --glass: rgba(255, 255, 255, .62);
+
+  /* type */
+  --display: "Outfit", system-ui, sans-serif;
+  --sans: "Inter", system-ui, sans-serif;
+
+  /* motion */
+  --ease: cubic-bezier(.22, 1, .36, 1);
+  --ease-spring: cubic-bezier(.34, 1.56, .64, 1);
+
+  /* space */
+  --radius: 22px;
+  --radius-sm: 12px;
+  /* side padding grows on wide screens so every section shares one centred content
+     column of at most --maxw (the story overlays and the nav line up with it too) */
+  --maxw: 1440px;
+  --pad: max(clamp(18px, 3.2vw, 46px), calc((100vw - var(--maxw)) / 2));
+}
+
+/* very large monitors: a slightly wider column */
+@media (min-width: 2200px) { :root { --maxw: 1640px; } }

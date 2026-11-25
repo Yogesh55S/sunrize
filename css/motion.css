@@ -1,0 +1,61 @@
+/* motion.css — every keyframe and continuous movement in one file.
+   Reduced-motion rules live at the bottom and switch all of it off. */
+
+@keyframes drift {
+  from { transform: translate3d(-1.2%, 0, 0); }
+  to { transform: translate3d(1.2%, -.8%, 0); }
+}
+
+@keyframes bob {
+  from { transform: translateY(-1.5%) rotate(-5deg); }
+  to { transform: translateY(1.8%) rotate(4deg); }
+}
+
+@keyframes nudge {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(3px); }
+}
+
+@keyframes ping {
+  0% { box-shadow: 0 0 0 0 rgba(0,57,110,.55); }
+  70%, 100% { box-shadow: 0 0 0 14px rgba(0,57,110,0); }
+}
+
+@keyframes sweep {
+  0% { transform: translateX(-130%) skewX(-12deg); opacity: 1; }
+  100% { transform: translateX(330%) skewX(-12deg); opacity: 1; }
+}
+
+@keyframes tickfill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* reveal helper for sections below the story */
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 26px, 0);
+  transition: opacity .8s var(--ease), transform .8s var(--ease);
+}
+.reveal.is-in { opacity: 1; transform: none; }
+
+/* footer stands up like the cards */
+.footer { animation: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .clouds, .float, .hint-ring svg, .hot-ping { display: none; }
+  .review { opacity: 1; transform: none; }
+  .reveal { opacity: 1; transform: none; }
+  .area-chips li { opacity: 1; transform: none; }
+}

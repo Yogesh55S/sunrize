@@ -1,0 +1,27 @@
+# Search engines are welcome; AI training crawlers are not (remove these
+# blocks if you are happy for your text and images to be used for training).
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.sunrisetransit.co.uk/sitemap.xml

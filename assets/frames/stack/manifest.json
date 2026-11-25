@@ -1,0 +1,47 @@
+{
+  "fps": 24,
+  "keyframes": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "background": "#e4f0fb",
+  "blend": true,
+  "desktop": {
+    "dir": "desktop",
+    "count": 48,
+    "width": 1200,
+    "height": 1200,
+    "poster": "poster-desktop.webp"
+  },
+  "mobile": {
+    "dir": "mobile",
+    "count": 24,
+    "width": 720,
+    "height": 720,
+    "poster": "poster-mobile.webp",
+    "media": "(max-width: 900px)"
+  },
+  "atlas": {
+    "desktop": {
+      "file": "desktop-atlas.webp",
+      "cols": 7,
+      "rows": 7,
+      "w": 240,
+      "h": 240,
+      "step": 1,
+      "count": 48
+    },
+    "mobile": {
+      "file": "mobile-atlas.webp",
+      "cols": 5,
+      "rows": 5,
+      "w": 240,
+      "h": 240,
+      "step": 1,
+      "count": 24
+    }
+  }
+}
